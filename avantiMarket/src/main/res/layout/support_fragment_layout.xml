@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/black">
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="@dimen/regular_margin"
+	    android:layout_marginRight="@dimen/regular_margin"
+	    android:background="@color/black"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical" >
+	
+	    <TextView
+	        android:id="@+id/m_nameOfCard"
+	        style="@style/avanti_field_label"
+	        android:layout_marginTop="@dimen/small_textview_height"
+	        android:layout_gravity="left"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/rewards_screen_text_size"
+	        android:text="@string/how_can_we_help" />
+	
+	    <Button
+	        android:id="@+id/BtnHelpfulHints"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/support_buttons_height"
+	        android:layout_marginTop="@dimen/regular_margin"
+	        android:layout_gravity="center"
+	        android:text="@string/helpful_hints"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/support_buttons_text_size"
+	        android:background="@color/green" />
+	
+	    <Button
+	        android:id="@+id/BtnContactUs"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/support_buttons_height"
+	        android:layout_marginTop="@dimen/small_margin"
+	        android:layout_gravity="center"
+	        android:text="@string/contact_us"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/support_buttons_text_size"
+	        android:background="@color/orange" />
+	
+	    <Button
+	        android:id="@+id/BtnYourFeedback"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/support_buttons_height"
+	        android:layout_marginTop="@dimen/small_margin"
+	        android:layout_gravity="center"
+	        android:text="@string/your_feedback"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/support_buttons_text_size"
+	        android:background="@color/dark_blue" />
+	
+	</LinearLayout>
+</RelativeLayout>

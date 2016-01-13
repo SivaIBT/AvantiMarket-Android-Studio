@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue" >
+
+    <LinearLayout
+        android:id="@+id/rl_feedbackfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_feedback_title"
+            style="@style/avanti_field_label"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/regular_margin"
+            android:text="@string/feedback_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/support_list_text_size" />
+
+        <Spinner
+            android:id="@+id/spinner_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/regular_textview_height"
+            android:layout_marginLeft="@dimen/regular_margin"
+            android:layout_marginRight="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/blue_spinner"
+            android:drawSelectorOnTop="true"
+            android:spinnerMode="dropdown" >
+        </Spinner>
+
+        <EditText
+            android:id="@+id/et_feedback_describe"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/regular_margin"
+            android:layout_marginRight="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/feedback_description_hint"
+            android:padding="@dimen/small_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/support_list_text_size" />
+
+        <Button
+            android:id="@+id/btn_feedback_submit"
+            style="@style/avanti_button"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@color/moderate_grey"
+            android:text="@string/submit"
+            android:textColor="@drawable/button_blue_submit_text" />
+    </LinearLayout>
+
+</ScrollView>

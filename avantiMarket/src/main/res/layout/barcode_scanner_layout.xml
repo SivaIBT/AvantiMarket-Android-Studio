@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MyAvantiActivity" >
+
+    <TextView
+        android:id="@+id/add_text"
+        style="@style/avanti_field_label"
+        android:text="@string/add_market_card"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white" />
+
+    <fragment
+        android:id="@+id/barcode_scanner"
+        android:layout_below="@id/add_text"
+        android:layout_margin="20dp"
+        android:name="com.abhi.barcode.frag.libv2.BarcodeFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/m_orContainer"
+        android:layout_below="@id/barcode_scanner"
+        style="@style/avanti_field_container"
+        android:gravity="center"
+        android:background="@android:color/transparent" >
+
+        <include
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            layout="@layout/horizontal_separator" />
+
+        <TextView
+            style="@style/avanti_field_label"
+            android:text="@string/or"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white" />
+
+        <include
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            layout="@layout/horizontal_separator" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/m_manualEntryField"
+        android:layout_below="@id/m_orContainer"
+        style="@style/avanti_text_field"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:hint="@string/market_card_scan_code"
+        android:inputType="number"
+        android:textCursorDrawable="@null" />
+
+</RelativeLayout>

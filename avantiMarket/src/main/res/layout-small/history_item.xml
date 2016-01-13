@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/history_item_background"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:gravity="center_vertical"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/history_list_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/regular_textview_height"
+            android:singleLine="true"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/regular_text_size" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <View
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:background="@color/moderate_grey" />
+
+</RelativeLayout>

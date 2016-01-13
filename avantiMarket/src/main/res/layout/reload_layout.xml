@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/m_primaryLabel"
+                style="@style/avanti_field_label"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/regular_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/primary"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/m_categoryLabel"
+                style="@style/avanti_field_label"
+                android:layout_marginTop="@dimen/big_margin"
+                android:text="@string/my_market_card"
+                android:textColor="@color/white" />
+
+            <ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <Button
+                        style="@style/view_flipper_button"
+                        android:background="@drawable/mc_green_background"
+                        android:text="@string/balance" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <Button
+                        style="@style/view_flipper_button"
+                        android:background="@drawable/mc_darkblue_background"
+                        android:text="@string/balance" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <Button
+                        style="@style/view_flipper_button"
+                        android:background="@drawable/mc_skyblue_background"
+                        android:text="@string/balance" />
+                </LinearLayout>
+            </ViewFlipper>
+
+            <TextView
+                android:id="@+id/m_reloadLabel"
+                style="@style/avanti_field_label"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/regular_margin"
+                android:layout_marginTop="@dimen/regular_margin"
+                android:text="@string/reload_amount"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/m_getBonusText"
+                style="@style/avanti_field_label"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/regular_margin"
+                android:text="@string/get_bonus"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size" />
+
+            <LinearLayout
+                android:id="@+id/m_denominationContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:gravity="center_horizontal" >
+
+                <ImageButton
+                    android:id="@+id/m_tenCheckbox"
+                    style="@style/check_box_image_button" />
+
+                <TextView
+                    android:id="@+id/m_reloadText1"
+                    style="@style/check_box_text"
+                    android:text="@string/reload_ten" />
+
+                <ImageButton
+                    android:id="@+id/m_twentyCheckbox"
+                    style="@style/check_box_image_button" />
+
+                <TextView
+                    android:id="@+id/m_reloadText2"
+                    style="@style/check_box_text"
+                    android:text="@string/reload_twenty" />
+
+                <ImageButton
+                    android:id="@+id/m_fiftyCheckbox"
+                    style="@style/check_box_image_button" />
+
+                <TextView
+                    android:id="@+id/m_reloadText3"
+                    style="@style/check_box_text"
+                    android:text="@string/reload_fifty" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/m_payWithText"
+                style="@style/avanti_field_label"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/regular_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="@string/pay_with"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/m_creditCardsContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <include layout="@layout/cc_detail_holder" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:layout_marginRight="@dimen/regular_margin"
+                    layout="@layout/horizontal_separator" />
+
+                <include layout="@layout/cc_detail_holder" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:layout_marginRight="@dimen/regular_margin"
+                    layout="@layout/horizontal_separator" />
+
+                <include layout="@layout/cc_detail_holder" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:layout_marginRight="@dimen/regular_margin"
+                    layout="@layout/horizontal_separator" />
+
+                <include layout="@layout/cc_detail_holder" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:layout_marginRight="@dimen/regular_margin"
+                    layout="@layout/horizontal_separator" />
+
+                <include layout="@layout/cc_detail_holder" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:layout_marginRight="@dimen/regular_margin"
+                    layout="@layout/horizontal_separator" />
+
+                <include layout="@layout/cc_detail_holder" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:layout_marginRight="@dimen/regular_margin"
+                    layout="@layout/horizontal_separator" />
+
+                <include layout="@layout/cc_detail_holder" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:layout_marginRight="@dimen/regular_margin"
+                    layout="@layout/horizontal_separator" />
+
+                <include layout="@layout/cc_detail_holder" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:layout_marginRight="@dimen/regular_margin"
+                    layout="@layout/horizontal_separator" />
+
+                <include layout="@layout/cc_detail_holder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m_addWayToPay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" 
+                android:visibility="gone" >
+
+                <Button
+                    android:layout_width="@dimen/regular_textview_height"
+                    android:layout_height="@dimen/big_margin"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:background="@drawable/add_cc" />
+
+                <TextView
+                    style="@style/avanti_field_label"
+                    android:layout_height="@dimen/big_margin"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:text="Add Way to Pay"
+                    android:textColor="@color/dark_grey" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/m_confirmButton"
+                style="@style/avanti_button"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@drawable/button_green_grey_background"
+                android:text="@string/confirm"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/m_cancelButton"
+                style="@style/avanti_button"
+                android:layout_marginBottom="@dimen/regular_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@drawable/button_grey_white_background"
+                android:text="@string/cancel_capital" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/m_primaryLabel"
+        style="@style/avanti_field_label"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/primary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/m_categoryLabel"
+        style="@style/avanti_field_label"
+        android:layout_marginTop="@dimen/big_margin"
+        android:text="@string/my_market_card"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/market_card_height"
+        android:layout_margin="@dimen/regular_margin"
+        android:background="@drawable/mc_green_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/avanti_field_label"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_margin"
+            android:text="@string/balance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text_size" />
+
+        <LinearLayout
+            android:id="@+id/barcode_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/m_barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size" />
+
+            <ImageView
+                android:id="@+id/m_market_card"
+                android:layout_width="wrap_content"
+                android:layout_height="115dp" />
+
+            <TextView
+                android:id="@+id/m_barcodeSequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/avanti_field_label"
+        android:text="@string/scan_to_pay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_text_size" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green">
+    
+    <TextView
+        android:id="@+id/tv_setupMyMarket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:text="Set up a My MarketCard account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/support_list_text_size"
+        android:textStyle="bold" />
+        
+	<ListView
+	    android:id="@+id/LV_setupMarketCard"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/very_small_margin"
+	    android:layout_marginLeft="@dimen/small_margin"
+	    android:layout_marginRight="@dimen/small_margin"
+	    android:layout_below="@+id/tv_setupMyMarket"
+	    android:smoothScrollbar="true"
+	    android:dividerHeight="0dp"
+		android:divider="@null" >
+	</ListView>
+
+	<RelativeLayout android:id="@+id/rl_wv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_above="@+id/rl_setupAvantiAcc"
+	android:layout_below="@+id/LV_setupMarketCard"
+	android:layout_marginTop="@dimen/very_small_margin"
+    android:layout_marginLeft="@dimen/small_margin"
+    android:layout_marginRight="@dimen/small_margin"
+    android:layout_marginBottom="@dimen/very_small_margin"
+    android:gravity="center"
+    android:layout_centerVertical="true"
+    >
+			<WebView 
+		    android:id="@+id/vv_setupAvantiAcc" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		   />
+	</RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/rl_setupAvantiAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_setupAccSubmit"
+        android:layout_alignParentLeft="true" 
+        android:layout_marginLeft="@dimen/small_margin">
+
+        <TextView
+            android:id="@+id/tv_findHelpful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/find_helpful"
+            android:layout_centerVertical="true" 
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:id="@+id/mysetupMyAccRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_findHelpful"
+            android:layout_centerVertical="true"
+            android:checkedButton="@+id/rb_yes" 
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/rb_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" 
+                android:buttonTint="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/rb_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rb_yes"
+                android:text="@string/no" 
+                android:buttonTint="@color/white"/>
+        </RadioGroup>
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/btn_setupAccSubmit"
+        style="@style/avanti_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="120dp"
+        android:layout_marginBottom="@dimen/very_small_margin"
+        android:layout_marginTop="@dimen/very_small_margin"
+        android:background="@color/white"
+        android:text="@string/submit"
+        android:textColor="@color/green" />
+    
+</RelativeLayout>

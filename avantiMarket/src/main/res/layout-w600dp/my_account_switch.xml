@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nav_list_item_background"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/history_list_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/regular_textview_height"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/regular_text_size" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/toggle_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/big_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textOff=""
+        android:textOn=""
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_off"
+        android:clickable="true"
+        android:background="@drawable/switch_white_green_background" />
+
+    <View
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:layout_marginRight="@dimen/big_margin"
+        android:background="@color/moderate_grey" />
+
+</RelativeLayout>

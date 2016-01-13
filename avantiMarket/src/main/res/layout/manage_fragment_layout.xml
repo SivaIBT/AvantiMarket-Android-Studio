@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/m_primaryLabel"
+        style="@style/avanti_field_label"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/primary"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/m_categoryLabel"
+        style="@style/avanti_field_label"
+        android:text="@string/my_market_card"
+        android:textColor="@color/white" />
+
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                style="@style/view_flipper_button"
+                android:background="@drawable/mc_green_background"
+                android:text="$12.25" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:background="@drawable/remove_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                style="@style/view_flipper_button"
+                android:background="@drawable/mc_darkblue_background"
+                android:text="$22.50" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:background="@drawable/remove_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/view_flipper_button"
+                android:background="@drawable/mc_skyblue_background"
+                android:text="$32.75" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:background="@drawable/remove_back" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/m_updateInfoButton"
+            style="@style/avanti_button"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_white_green_background"
+            android:text="@string/update_info"
+            android:textColor="@color/green" />
+
+        <Button
+            android:id="@+id/m_makePrimaryButton"
+            style="@style/avanti_button"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_white_green_background"
+            android:text="@string/make_primary"
+            android:textColor="@color/light_grey" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/m_doneButton"
+        style="@style/avanti_button"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@drawable/button_grey_white_background"
+        android:text="@string/done" />
+
+</LinearLayout>

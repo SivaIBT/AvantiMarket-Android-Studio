@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+   
+   
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:singleLine="false"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/regular_textview_height"
+    android:textSize="@dimen/regular_text_size"
+    android:paddingRight="@dimen/regular_btn_height"
+    android:paddingLeft="@dimen/small_margin"
+    android:gravity="center_vertical"
+     />

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/m_nameLabel"
+                style="@style/avanti_field_label"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/regular_margin"
+                android:layout_marginLeft="@dimen/regular_margin"
+                android:layout_marginTop="@dimen/regular_margin"
+                android:minHeight="@dimen/regular_textview_height"
+                android:text="@string/hi"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/m_balanceRewardsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/regular_margin"
+                android:layout_marginRight="@dimen/regular_margin"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    style="@style/avanti_button_reload"
+                    android:layout_height="@dimen/small_textview_height"
+                    android:background="@color/green"
+                    android:text="@string/pay"
+                    android:textSize="@dimen/semi_regular_text_size" />
+
+                <Button
+                    android:id="@+id/m_balanceButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dash_board_button_height"
+                    android:background="@drawable/button_balance_background"
+                    android:text="$"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/home_screen_dimen" />
+
+                <Button
+                    style="@style/avanti_button_reload"
+                    android:layout_height="@dimen/small_textview_height"
+                    android:layout_marginTop="@dimen/regular_margin"
+                    android:background="@color/nav_menu_item_selected_color"
+                    android:text="@string/ways_to_pay"
+                    android:textSize="@dimen/semi_regular_text_size" />
+
+                <ImageButton
+                    android:id="@+id/m_cardsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dash_board_button_height"
+                    android:background="@drawable/button_black_blue_background"
+                    android:src="@drawable/ways_to_pay_for_list"
+                    android:scaleType="centerInside" />
+
+                <Button
+                    style="@style/avanti_button_reload"
+                    android:layout_height="@dimen/small_textview_height"
+                    android:layout_marginTop="@dimen/regular_margin"
+                    android:background="@color/orange"
+                    android:text="@string/account_history"
+                    android:textSize="@dimen/semi_regular_text_size" />
+
+                <ImageButton
+                    android:id="@+id/m_historyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dash_board_button_height"
+                    android:background="@drawable/button_black_orange_background"
+                    android:src="@drawable/history_for_list"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_reload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/regular_margin"
+                android:layout_marginLeft="@dimen/regular_margin"
+                android:layout_marginRight="@dimen/regular_margin"
+                android:layout_marginTop="@dimen/regular_margin"
+                android:background="@color/green"
+                android:padding="3dp"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/m_reloadButton"
+                    style="@style/avanti_button_reload"
+                    android:background="@drawable/button_white_grey_background"
+                    android:text="@string/reload"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/m_blankButton"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/regular_margin"
+        android:background="@color/light_grey" />
+
+    <EditText
+        android:id="@+id/m_nameOfCard"
+        style="@style/avanti_text_field"
+        android:background="@color/white"
+        android:hint="@string/name_of_market_card"
+        android:inputType="textCapSentences"
+        android:textCursorDrawable="@null" />
+
+    <RelativeLayout
+        android:id="@+id/m_makePrimaryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regular_margin"
+        android:layout_marginRight="@dimen/regular_margin"
+        android:layout_marginTop="@dimen/regular_margin" >
+
+        <ImageButton
+            android:id="@+id/m_makePrimaryCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/checkbox" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_textview_height"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/m_makePrimaryCheckbox"
+            android:gravity="center_vertical|left"
+            android:text="@string/make_prime"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/small_textview_height"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/regular_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:text="@string/choose_color"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/small_text_size" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regular_margin"
+        android:layout_marginRight="@dimen/regular_margin" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/update_mc_button_bg_height"
+            android:layout_marginRight="7dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/mc_green_background" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/update_mc_button_bg_height"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginRight="3.5dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/mc_darkblue_background" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/update_mc_button_bg_height"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/mc_skyblue_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regular_margin"
+        android:layout_marginRight="@dimen/regular_margin"
+        android:layout_marginTop="@dimen/small_margin" >
+
+        <ImageButton
+            android:id="@+id/m_greenCheckbox"
+            style="@style/check_box_image_button"
+            android:layout_margin="0dp"
+            android:layout_weight="0.33" />
+
+        <ImageButton
+            android:id="@+id/m_darkBlueCheckbox"
+            style="@style/check_box_image_button"
+            android:layout_margin="0dp"
+            android:layout_weight="0.33" />
+
+        <ImageButton
+            android:id="@+id/m_skyBlueCheckbox"
+            style="@style/check_box_image_button"
+            android:layout_margin="0dp"
+            android:layout_weight="0.33" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/m_doneButton"
+        style="@style/avanti_button"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@drawable/button_green_grey_background"
+        android:text="@string/done" />
+
+    <Button
+        android:id="@+id/m_cancelButton"
+        style="@style/avanti_button"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@drawable/button_light_grey_white_background"
+        android:text="@string/cancel_capital" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/regular_margin"
+        android:background="@color/moderate_grey" />
+
+    <Button
+        android:id="@+id/m_delete_mc_Button"
+        style="@style/avanti_button"
+        android:layout_below="@id/m_cancel_Button"
+        android:background="@drawable/button_grey_white_background"
+        android:text="@string/delete_card" />
+
+</LinearLayout>

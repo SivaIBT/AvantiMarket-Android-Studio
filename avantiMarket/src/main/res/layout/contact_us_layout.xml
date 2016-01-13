@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange" >
+
+    <LinearLayout
+        android:id="@+id/rl_contactUsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orange"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_Title"
+            style="@style/avanti_field_label"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/regular_margin"
+            android:text="@string/contact_us_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/support_list_text_size" />
+
+        <Spinner
+            android:id="@+id/spinner_support"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/regular_textview_height"
+            android:layout_marginLeft="@dimen/regular_margin"
+            android:layout_marginRight="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/very_small_margin"
+            android:background="@drawable/orange_spinner"
+            android:drawSelectorOnTop="true"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/spinner_issue"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/regular_textview_height"
+            android:layout_marginLeft="@dimen/regular_margin"
+            android:layout_marginRight="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/orange_spinner"
+            android:drawSelectorOnTop="true"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/et_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/regular_margin"
+            android:layout_marginRight="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/describe_issue"
+            android:padding="@dimen/small_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/support_list_text_size" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/avanti_button"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/big_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@color/dark_grey"
+            android:text="@string/next"
+            android:textColor="@drawable/button_orange_submit_text" />
+    </LinearLayout>
+
+</ScrollView>

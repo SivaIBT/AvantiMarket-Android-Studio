@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/search_results_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:text="@string/search_results"
+        android:textColor="@color/white"
+        android:textSize="@dimen/regular_text_size"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/ListView_CommonIssues"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_results_title"
+        android:layout_marginBottom="@dimen/very_small_margin"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:smoothScrollbar="true" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_commonIssue_articleDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_commonIssue_articleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/regular_margin"
+            android:layout_marginRight="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/regular_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/support_list_text_size" />
+
+        <LinearLayout
+            android:id="@+id/sv_commonIssue_articleDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_commonIssue_articleTitle"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/regular_margin"
+            android:layout_marginRight="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/very_small_margin" >
+
+            <WebView
+                android:id="@+id/wv_commonIssue_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/very_small_margin"
+                android:background="@android:color/transparent"
+                android:gravity="top"
+                android:padding="5dip"
+                android:textColor="@color/black" />
+
+            <WebView
+                android:id="@+id/wv_video_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/very_small_margin"
+                android:background="@android:color/transparent"
+                android:gravity="top"
+                android:padding="5dip"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

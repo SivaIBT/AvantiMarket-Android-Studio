@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/black">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="@dimen/regular_margin"
+	    android:layout_marginRight="@dimen/regular_margin"
+	    android:background="@color/black"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical" >
+	
+	    <Button
+	        android:id="@+id/BtnUsingTheMarket"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/support_buttons_height"
+	        android:layout_marginTop="@dimen/support_buttons_height"
+	        android:layout_gravity="center"
+	        android:text="@string/using_the_market"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/support_buttons_text_size"
+	        android:background="@color/green" />
+	
+	    <Button
+	        android:id="@+id/BtnUsingTheApp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/support_buttons_height"
+	        android:layout_marginTop="@dimen/small_margin"
+	        android:layout_gravity="center"
+	        android:text="@string/using_the_app"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/support_buttons_text_size"
+	        android:background="@color/orange" />
+	
+	    <Button
+	        android:id="@+id/BtnCommomIssue"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/support_buttons_height"
+	        android:layout_marginTop="@dimen/small_margin"
+	        android:layout_gravity="center"
+	        android:text="@string/common_issues"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/support_buttons_text_size"
+	        android:background="@color/dark_blue" />
+	
+	</LinearLayout>
+</RelativeLayout>

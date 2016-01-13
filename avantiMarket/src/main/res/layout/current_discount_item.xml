@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3px" >
+    
+    <View
+        android:id="@+id/v_custDiscSeperator"
+	    android:layout_width="20dp"
+	    android:layout_height="1dp"
+	    android:layout_marginTop="@dimen/very_small_margin"
+	    android:layout_marginLeft="5dp"
+	    android:background="@color/white"
+	    />
+    
+    <TextView
+        android:id="@+id/tv_currentOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_below="@+id/v_custDiscSeperator"
+        android:text="Pepsi"
+        android:textColor="@color/rewards_seekbar"
+        android:textSize="@dimen/regular_text_size" />
+
+    <TextView
+        android:id="@+id/tv_currentOfferDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_currentOffer"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:text="Buy 3 get 1 free......"
+        android:textSize="@dimen/regular_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+ 
+    <TextView
+        android:id="@+id/tv_currentOfferAvailibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_currentOfferDiscount"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:text="Boooo"
+        android:textColor="@color/light_grey"/>
+    
+
+</RelativeLayout>

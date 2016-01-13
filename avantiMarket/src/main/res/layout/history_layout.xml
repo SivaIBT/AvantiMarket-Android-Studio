@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/m_blankButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/regular_margin"
+            android:background="@color/light_grey" />
+
+        <ListView
+            android:id="@+id/transactions_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:id="@+id/transaction_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/small_margin"
+                android:paddingRight="@dimen/small_margin"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/transaction_date"
+                    style="@style/avanti_field_label"
+                    android:layout_height="@dimen/regular_textview_height"
+                    android:layout_marginBottom="@dimen/regular_margin"
+                    android:text="@string/transaction_date"
+                    android:textColor="@color/dark_grey" />
+
+                <TextView
+                    android:id="@+id/transaction_number"
+                    style="@style/avanti_field_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/regular_margin"
+                    android:text="@string/transaction_number"
+                    android:textColor="@color/dark_grey" />
+
+                <TextView
+                    android:id="@+id/transaction_card_name"
+                    style="@style/avanti_field_label"
+                    android:layout_height="@dimen/regular_textview_height"
+                    android:layout_marginBottom="@dimen/regular_margin"
+                    android:text="@string/transaction_card_name"
+                    android:textColor="@color/dark_grey"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/transaction_market_card"
+                    style="@style/avanti_field_label"
+                    android:layout_height="@dimen/regular_textview_height"
+                    android:layout_marginBottom="@dimen/regular_margin"
+                    android:text="@string/transaction_card_name"
+                    android:textColor="@color/dark_grey"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/transaction_card_type"
+                    style="@style/avanti_field_label"
+                    android:layout_height="@dimen/regular_textview_height"
+                    android:layout_marginBottom="@dimen/regular_margin"
+                    android:text="@string/transaction_card_type"
+                    android:textColor="@color/dark_grey" />
+
+                <TextView
+                    android:id="@+id/transaction_type"
+                    style="@style/avanti_field_label"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_grey"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/itemised_bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <include
+                    layout="@layout/horizontal_separator"
+                    android:paddingRight="@dimen/big_margin" />
+
+                <RelativeLayout
+                    android:id="@+id/total_bill_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/avanti_field_label"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/total"
+                        android:textColor="@color/dark_grey" />
+
+                    <TextView
+                        android:id="@+id/total_bill_amount"
+                        style="@style/avanti_field_label"
+                        android:gravity="center_vertical|right"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/balance_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/avanti_field_label"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/updated_balance"
+                        android:textColor="@color/dark_grey" />
+
+                    <TextView
+                        android:id="@+id/balance_amount"
+                        style="@style/avanti_field_label"
+                        android:gravity="center_vertical|right"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/points_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/avanti_field_label"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/points_earned"
+                        android:textColor="@color/orange" />
+
+                    <TextView
+                        android:id="@+id/points_earned"
+                        style="@style/avanti_field_label"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:textColor="@color/orange" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/email_receipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/email_receipt" />
+
+                    <TextView
+                        style="@style/avanti_field_label"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/email_receipt"
+                        android:textColor="@color/green" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

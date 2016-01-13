@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/denominations_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/regular_margin"
+        android:layout_marginRight="@dimen/regular_margin"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+"
+
+
+        <TextView
+            style="@style/avanti_field_label"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="@string/reload_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/support_buttons_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/avanti_field_label"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/reload_description"
+            android:textColor="@color/white"
+            android:textSize="@dimen/support_list_text_size" />
+
+        <Button
+            android:id="@+id/reload_ten"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/update_mc_button_bg_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@drawable/button_blue_blue_border"
+            android:text="@string/reload_ten"
+            android:textColor="@color/white"
+            android:textSize="@dimen/rewards_screen_text_size" />
+
+        <Button
+            android:id="@+id/reload_twenty"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/update_mc_button_bg_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/button_blue_blue_border"
+            android:text="@string/reload_denomination_twenty"
+            android:textColor="@color/white"
+            android:textSize="@dimen/rewards_screen_text_size" />
+
+        <Button
+            android:id="@+id/reload_fifty"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/update_mc_button_bg_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/button_blue_blue_border"
+            android:text="@string/reload_denomination_fifty"
+            android:textColor="@color/white"
+            android:textSize="@dimen/rewards_screen_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secure_page_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <WebView
+            android:id="@+id/secure_page_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

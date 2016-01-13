@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right|center_vertical" >
+
+    <EditText
+        android:id="@+id/m_pinDigitOneTextField"
+        style="@style/avanti_pin_entry_edit_text"
+        android:layout_marginRight="@dimen/small_margin" />
+
+    <EditText
+        android:id="@+id/m_pinDigitTwoTextField"
+        style="@style/avanti_pin_entry_edit_text"
+        android:layout_marginRight="@dimen/small_margin" />
+
+    <EditText
+        android:id="@+id/m_pinDigitThreeTextField"
+        style="@style/avanti_pin_entry_edit_text"
+        android:layout_marginRight="@dimen/small_margin" />
+
+    <EditText
+        android:id="@+id/m_pinDigitFourTextField"
+        style="@style/avanti_pin_entry_edit_text"
+        android:layout_marginRight="@dimen/regular_margin" />
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <ScrollView
+        android:id="@+id/m_scrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/m_blankButton"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/regular_margin"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:id="@+id/m_nameContainer"
+                style="@style/avanti_field_container"
+                android:background="@color/white"
+                android:gravity="left|center_vertical" >
+
+                <EditText
+                    android:id="@+id/m_cardNumber"
+                    style="@style/avanti_text_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/regular_textview_height"
+                    android:layout_weight="0.95"
+                    android:hint="@string/hidden_card_number"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:textColor="@color/dark_grey" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/separator" />
+
+                <EditText
+                    android:id="@+id/m_cardExpiry"
+                    style="@style/avanti_text_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/regular_textview_height"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_weight="0.05"
+                    android:hint="@string/expiry"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textColor="@color/dark_grey" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/regular_margin"
+                android:layout_marginRight="@dimen/regular_margin"
+                layout="@layout/horizontal_separator" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/m_zipTextField"
+                    style="@style/avanti_text_field"
+                    android:hint="@string/zip"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textCursorDrawable="@null" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:layout_marginRight="@dimen/regular_margin"
+                    layout="@layout/horizontal_separator" />
+
+                <EditText
+                    android:id="@+id/m_cvvTextField"
+                    style="@style/avanti_text_field"
+                    android:hint="@string/cvv"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/m_makePrimaryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m_scrollContainer"
+        android:layout_marginLeft="@dimen/regular_margin"
+        android:layout_marginRight="@dimen/regular_margin"
+        android:layout_marginTop="@dimen/regular_margin" >
+
+        <ImageButton
+            android:id="@+id/m_makePrimarySelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/m_makePrimaryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_textview_height"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toRightOf="@id/m_makePrimarySelection"
+            android:gravity="center_vertical|left"
+            android:text="@string/make_prime"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/m_saveButton"
+        style="@style/avanti_button"
+        android:layout_below="@id/m_makePrimaryContainer"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:background="@drawable/button_green_grey_background"
+        android:text="@string/done" />
+
+    <Button
+        android:id="@+id/m_cancel_Button"
+        style="@style/avanti_button"
+        android:layout_below="@id/m_saveButton"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@drawable/button_light_grey_white_background"
+        android:text="@string/cancel_capital" />
+
+    <View
+        android:id="@+id/m_separator"
+        android:layout_below="@id/m_cancel_Button" 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/regular_margin"
+        android:background="@color/moderate_grey" />
+
+    <Button
+        android:id="@+id/m_delete_CC_Button"
+        style="@style/avanti_button"
+        android:layout_below="@id/m_separator"
+        android:background="@drawable/button_grey_white_background"
+        android:text="@string/delete_cc" />
+
+</RelativeLayout>

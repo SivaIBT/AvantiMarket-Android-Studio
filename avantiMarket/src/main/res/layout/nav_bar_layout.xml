@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white" >
+
+    <ImageButton
+        android:id="@+id/m_menuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_menu"
+        android:scaleType="center"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:src="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/m_navBarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:scaleType="center"
+        android:text="@string/my_avanti"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/regular_text_size"
+        android:textStyle="bold" 
+        />
+
+    <ImageView
+        android:id="@+id/m_navBarImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/m_menuButton"
+        android:gravity="center"
+        android:scaleType="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <ScrollView
+        android:id="@+id/m_scrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/m_blankButton"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:id="@+id/m_nameContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <EditText
+                    android:id="@+id/m_firstField"
+                    style="@style/avanti_text_field"
+                    android:layout_weight="0.5"
+                    android:maxLength="51"
+                    android:textColor="@color/dark_grey" />
+
+                <View
+                    android:id="@+id/m_verticalSeparator"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/separator"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/m_firstField_PartTwo"
+                    style="@style/avanti_text_field"
+                    android:layout_weight="0.5"
+                    android:maxLength="51"
+                    android:textColor="@color/dark_grey"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include layout="@layout/horizontal_separator" />
+
+            <EditText
+                android:id="@+id/m_secondField"
+                style="@style/avanti_text_field"
+                android:textColor="@color/dark_grey" />
+
+            <include layout="@layout/horizontal_separator" />
+
+            <EditText
+                android:id="@+id/m_thirdField"
+                style="@style/avanti_text_field"
+                android:maxLength="14"
+                android:textColor="@color/dark_grey" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/m_saveButton"
+        style="@style/avanti_button"
+        android:layout_below="@id/m_scrollContainer"
+        android:layout_marginTop="@dimen/semi_regular_margin"
+        android:background="@drawable/button_green_grey_background"
+        android:text="@string/done" />
+
+    <Button
+        android:id="@+id/m_cancel_Button"
+        style="@style/avanti_button"
+        android:layout_below="@id/m_saveButton"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@drawable/button_grey_white_background"
+        android:text="@string/cancel_capital" />
+
+</RelativeLayout>

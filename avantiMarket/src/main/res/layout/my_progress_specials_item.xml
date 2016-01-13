@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F8F8F7"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/semi_regular_margin"
+        android:layout_marginRight="@dimen/semi_regular_margin"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/m_expiringSpanButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/semi_regular_margin"
+            android:background="@color/light_grey"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/very_small_margin"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/m_free_claim"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/very_small_margin"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/very_small_margin"
+            android:text="@string/free_claim"
+            android:textColor="#1C8DA8"
+            android:textSize="@dimen/semi_regular_text_size"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F7"
+            android:gravity="center_vertical" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:max="5"
+                android:progress="5"
+                android:progressDrawable="@drawable/circular" />
+
+            <ProgressBar
+                android:id="@+id/progress_indicator"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:progressDrawable="@drawable/progress" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:selectAllOnFocus="false"
+                android:textSize="@dimen/regular_text_size" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/semi_regular_margin"
+                android:layout_marginRight="@dimen/semi_regular_margin"
+                android:layout_toRightOf="@id/progress_indicator"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/regular_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/semi_regular_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/semi_regular_margin"
+        android:layout_marginRight="@dimen/semi_regular_margin"
+        android:background="@color/moderate_grey" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F8F8F7"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/semi_regular_margin"
+        android:layout_marginRight="@dimen/semi_regular_margin"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/m_expiringSpanButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/semi_regular_margin"
+            android:background="@color/light_grey"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/very_small_margin"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/very_small_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/regular_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/regular_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/semi_regular_text_size" />
+    </LinearLayout>
+
+    <View
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/semi_regular_margin"
+        android:layout_marginRight="@dimen/semi_regular_margin"
+        android:background="@color/moderate_grey" />
+
+</RelativeLayout>

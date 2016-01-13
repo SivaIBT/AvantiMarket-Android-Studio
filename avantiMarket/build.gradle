@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.byndl.avantimarket"
+        minSdkVersion 14
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':library')
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile files('libs/barcodefraglibv2.jar')
+    compile files('libs/classes.jar')
+    compile files('libs/commons-codec-1.10.jar')
+    compile files('libs/core.jar')
+    compile files('libs/mixpanel-android.jar')
+    compile files('libs/net_android_ibtech.jar')
+}

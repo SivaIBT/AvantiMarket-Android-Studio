@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_thank_you"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+       <TextView
+           android:id="@+id/tv_thankyou_msg"
+           style="@style/avanti_field_label"
+           android:layout_centerHorizontal="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/regular_margin"
+           android:layout_marginLeft="@dimen/small_margin"
+           android:layout_marginRight="@dimen/small_margin"
+           android:textAlignment="center"
+           android:textColor="@color/white"
+           android:textSize="@dimen/regular_text_size" />
+       <ImageView 
+           android:id="@+id/iv_smily"
+           android:layout_centerHorizontal="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/tv_thankyou_msg"
+           android:layout_marginTop="1dp"
+           />
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <ScrollView
+        android:id="@+id/m_scrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/m_emailTextField"
+                    style="@style/avanti_text_field"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textCursorDrawable="@null" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    layout="@layout/horizontal_separator" />
+
+                <EditText
+                    android:id="@+id/m_passwordTextField"
+                    style="@style/avanti_text_field"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/m_blankButton"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:id="@+id/m_pinTextFieldsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_textview_height"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/m_enterPinLabel"
+                    style="@style/avanti_field_label"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:text="@string/enter_new_pin"
+                    android:textColor="@color/dark_grey" />
+
+                <include
+                    android:id="@+id/pin_fields_container"
+                    layout="@layout/pin_input" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                layout="@layout/horizontal_separator" />
+
+            <LinearLayout
+                android:id="@+id/m_re_pinTextFieldsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_textview_height"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/m_reEnterPinLabel"
+                    style="@style/avanti_field_label"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:text="@string/re_enter_pin"
+                    android:textColor="@color/dark_grey" />
+
+                <LinearLayout
+                    android:id="@+id/re_pin_fields_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical" >
+
+                    <EditText
+                        android:id="@+id/m_re_pinDigitOneTextField"
+                        style="@style/avanti_pin_entry_edit_text"
+                        android:layout_marginRight="@dimen/small_margin" />
+
+                    <EditText
+                        android:id="@+id/m_re_pinDigitTwoTextField"
+                        style="@style/avanti_pin_entry_edit_text"
+                        android:layout_marginRight="@dimen/small_margin" />
+
+                    <EditText
+                        android:id="@+id/m_re_pinDigitThreeTextField"
+                        style="@style/avanti_pin_entry_edit_text"
+                        android:layout_marginRight="@dimen/small_margin" />
+
+                    <EditText
+                        android:id="@+id/m_re_pinDigitFourTextField"
+                        style="@style/avanti_pin_entry_edit_text"
+                        android:layout_marginRight="@dimen/regular_margin" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/m_loginButton"
+                style="@style/avanti_button"
+                android:layout_marginTop="@dimen/regular_margin"
+                android:background="@drawable/button_green_grey_background"
+                android:text="@string/set_pin" />
+
+            <Button
+                android:id="@+id/m_cancelButton"
+                style="@style/avanti_button"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@drawable/button_light_grey_white_background"
+                android:text="@string/cancel_capital" />
+
+            <Button
+                android:id="@+id/m_forgot_password"
+                style="@style/avanti_button"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@drawable/button_white_green_with_border"
+                android:textColor="@color/dark_grey"
+                android:text="FORGOT PASSWORD" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

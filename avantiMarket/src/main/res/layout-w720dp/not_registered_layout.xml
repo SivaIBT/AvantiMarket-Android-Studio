@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/not_registered_background" />
+        
+    <ScrollView
+        android:id="@+id/m_scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/avanti_logo_in_menu"
+                android:layout_height="@dimen/dash_board_button_height"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <TextView
+                style="@style/avanti_field_label"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/welcome_registration"
+                android:textColor="@color/white"
+                android:textSize="@dimen/rewards_screen_text_size" />
+
+            <TextView
+                style="@style/avanti_field_label"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginTop="@dimen/regular_margin"
+                android:text="@string/not_yet_registered"
+                android:textColor="@color/white"
+                android:textSize="@dimen/regular_text_size"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="@dimen/semi_regular_margin"
+                android:layout_marginRight="@dimen/semi_regular_margin"
+                android:layout_marginTop="@dimen/semi_regular_margin" >
+
+                <Button
+                    android:layout_width="@dimen/update_mc_button_bg_height"
+                    android:layout_height="@dimen/update_mc_button_bg_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/scan" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step_1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scan"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/rewards_screen_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="@dimen/semi_regular_margin"
+                android:layout_marginRight="@dimen/semi_regular_margin"
+                android:layout_marginTop="@dimen/semi_regular_margin" >
+
+                <Button
+                    android:layout_width="@dimen/update_mc_button_bg_height"
+                    android:layout_height="@dimen/update_mc_button_bg_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/allow" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step_2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/allow"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/rewards_screen_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="@dimen/semi_regular_margin"
+                android:layout_marginRight="@dimen/semi_regular_margin"
+                android:layout_marginTop="@dimen/semi_regular_margin" >
+
+                <Button
+                    android:layout_width="@dimen/update_mc_button_bg_height"
+                    android:layout_height="@dimen/update_mc_button_bg_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/link" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step_3"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/rewards_screen_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/regular_margin"
+                android:background="@color/white"
+                android:padding="@dimen/semi_regular_margin"
+                android:text="@string/existing_account"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/regular_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

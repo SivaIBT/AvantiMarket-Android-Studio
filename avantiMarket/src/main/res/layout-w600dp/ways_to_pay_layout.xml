@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/m_primaryLabel"
+        style="@style/avanti_field_label"
+        android:layout_height="@dimen/small_textview_height"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/primary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/m_categoryLabel"
+        style="@style/avanti_field_label"
+        android:layout_height="@dimen/small_textview_height"
+        android:layout_marginTop="@dimen/big_margin"
+        android:text="@string/credit_card"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/credit_card_holder_height"
+        android:layout_marginTop="@dimen/regular_margin" >
+
+        <RelativeLayout
+            android:id="@+id/first_cc"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/credit_card_holder_height"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/credit_card_height"
+                android:layout_margin="@dimen/regular_margin"
+                android:background="@drawable/credit_card_backdrop"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/primary_card_number"
+                    style="@style/credit_card_detail"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/primary_card_expiry"
+                    style="@style/credit_card_detail"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/primary_card_zip"
+                    style="@style/credit_card_detail"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/card_category_text"
+                android:text=""
+                android:visibility="invisible" />
+
+            <Button
+                style="@style/card_logo_button"
+                android:visibility="invisible" >
+            </Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_cc"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/credit_card_holder_height"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/credit_card_height"
+                android:layout_margin="@dimen/regular_margin"
+                android:background="@drawable/credit_card_backdrop"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/credit_card_detail"
+                    android:text="" />
+
+                <TextView
+                    style="@style/credit_card_detail"
+                    android:text=" " />
+
+                <TextView
+                    style="@style/credit_card_detail"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/card_category_text"
+                android:text=""
+                android:visibility="invisible" />
+
+            <Button
+                style="@style/card_logo_button"
+                android:background="@drawable/visa"
+                android:visibility="invisible" >
+            </Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_cc"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/credit_card_holder_height"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/credit_card_height"
+                android:layout_margin="@dimen/regular_margin"
+                android:background="@drawable/credit_card_backdrop"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/credit_card_detail"
+                    android:text="" />
+
+                <TextView
+                    style="@style/credit_card_detail"
+                    android:text="" />
+
+                <TextView
+                    style="@style/credit_card_detail"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/card_category_text"
+                android:text=""
+                android:visibility="invisible" />
+
+            <Button
+                style="@style/card_logo_button"
+                android:background="@drawable/master_card"
+                android:visibility="invisible" >
+            </Button>
+        </RelativeLayout>
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotIndicatorContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#212121"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/addCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/very_small_margin"
+            android:background="@drawable/plus_grey" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/circleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/m_deleteCard"
+        style="@style/avanti_button"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:background="@drawable/button_light_grey_white_background"
+        android:text="@string/delete_card" />
+
+</LinearLayout>

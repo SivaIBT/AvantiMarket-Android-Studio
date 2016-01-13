@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+	    android:id="@+id/tv_rewardsPointEarned"
+	    style="@style/avanti_field_label"
+		android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="5dp"
+	    android:layout_marginTop="@dimen/semi_regular_margin"
+	    android:textColor="@color/white"
+	    android:textSize="@dimen/rewards_screen_text_size"
+	    android:text="@string/rewards_point_earned" />
+    
+	<TextView
+	    android:id="@+id/tv_rewardsPoint"
+	    style="@style/avanti_field_label"
+	    android:layout_marginTop="@dimen/semi_regular_margin"
+	    android:textColor="@color/rewards_seekbar"
+	    android:textSize="@dimen/rewards_screen_text_size"
+	    android:text="35"
+	    android:layout_toRightOf="@+id/tv_rewardsPointEarned" />
+    
+	<View
+	    android:id="@+id/v_rewards_seperator"
+	    android:layout_width="@dimen/rewards_screen_text_size"
+	    android:layout_height="1dp"
+	    android:layout_marginTop="@dimen/very_small_margin"
+	    android:layout_marginLeft="@dimen/small_margin"
+	    android:background="@color/white"
+	    android:layout_below="@+id/tv_rewardsPointEarned"/>
+	
+    <TextView
+	    android:id="@+id/tv_rewardsCurrentPromotions"
+	    style="@style/avanti_field_label"
+		android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+	    android:layout_marginTop="@dimen/very_small_margin"
+	    android:layout_gravity="left"
+	    android:textColor="@color/white"
+	    android:textSize="@dimen/rewards_screen_text_size"
+	    android:layout_below="@+id/v_rewards_seperator"
+	    android:text="@string/rewards_current_promotions" />
+    
+   
+     <ListView
+	    android:id="@+id/LV_rewardsList"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@+id/tv_currentDiscount"
+	    android:layout_below="@+id/tv_rewardsCurrentPromotions"
+	    android:layout_marginLeft="@dimen/small_margin"
+	    android:layout_marginRight="@dimen/small_margin"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginTop="5dp"
+	    android:smoothScrollbar="true"/>
+     
+	<RelativeLayout 
+	    android:id="@+id/rl_bottomCurrentDiscount"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="vertical"
+	    android:background="@color/white" 
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="5dp">   
+	     
+	    <TextView
+		    android:id="@+id/tv_currentDiscount"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="@dimen/very_small_margin"
+		    android:textColor="@color/dark_grey"
+		    android:textSize="@dimen/support_list_text_size"
+		    android:text="@string/current_discount" 
+		    />
+	    
+	    <ImageView
+	        android:id="@+id/iv_rewards_arrowRight"
+			android:src="@drawable/arrow_right"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="@dimen/small_margin"/>
+	    
+    </RelativeLayout>
+    
+</RelativeLayout>

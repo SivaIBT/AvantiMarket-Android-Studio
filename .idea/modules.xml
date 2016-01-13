@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AvantiMarket.iml" filepath="$PROJECT_DIR$/AvantiMarket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avantiMarket/avantiMarket.iml" filepath="$PROJECT_DIR$/avantiMarket/avantiMarket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+    </modules>
+  </component>
+</project>

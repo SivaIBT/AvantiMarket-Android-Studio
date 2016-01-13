@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3px" >
+
+    <TextView
+        android:id="@+id/txt_rewardsItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:padding="3px"
+        android:text="Pepsi"
+        android:textColor="@color/white"
+        android:textSize="@dimen/support_list_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_rewardsItemPromotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_rewardsItemName"
+        android:layout_marginLeft="5dp"
+        android:padding="2px"
+        android:textSize="@dimen/small_text_size"
+        android:text="Buy 3 get 1 free......"
+        android:textColor="@color/light_grey" />
+    
+    <SeekBar
+        android:id="@+id/seekBar_rewards"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_rewardsItemPromotion"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="@dimen/small_margin"
+        android:padding="5px"
+        android:max="5"
+        android:progress="2"
+        android:progressDrawable="@drawable/rewards_seekbar_progress"
+        android:thumb="@drawable/rewards_seekbar_thumb"/>
+
+    <TextView
+        android:id="@+id/tv_rewardsSeekBarValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBar_rewards"
+        android:layout_marginLeft="@dimen/semi_regular_margin"
+        android:layout_marginTop="2dp" />
+
+</RelativeLayout>

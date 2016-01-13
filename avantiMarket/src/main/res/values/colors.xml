@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="green">#339933</color>
+    <color name="dark_blue">#005BB4</color>
+    <color name="light_blue">#389BD2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FF8800</color>
+    <color name="dark_grey">#707070</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="moderate_grey">#A0A0A0</color>
+    <color name="separator">#88888888</color>
+    <color name="avanti_separator_line_color">#C5C6C8</color>
+    <color name="nav_menu_separator_line_color">#5F6062</color>
+    <color name="avanti_button_inactive_color">#C5C6C8</color>
+    <color name="avanti_tertiary_button_default_color">#5F6062</color>
+    <color name="nav_menu_item_selected_color">#00AAFF</color>
+    <color name="rewards_seekbar">#FCCE01</color>
+    <color name="light_green">#85C285</color>
+    <color name="dark_orange">#AB4400</color>
+    <color name="moderate_orange">#FF6600</color>
+    <color name="light_orange">#FFB866</color>
+    <color name="dark_green">#1F5C1F</color>
+</resources>

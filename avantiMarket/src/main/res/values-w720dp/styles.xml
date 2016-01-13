@@ -1,0 +1,165 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="avanti_text_field" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/regular_textview_height</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/regular_margin</item>
+    </style>
+
+    <style name="avanti_button" parent="@android:style/Widget.Button">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginLeft">@dimen/regular_margin</item>
+        <item name="android:layout_marginRight">@dimen/regular_margin</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/regular_btn_height</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+    </style>
+
+    <style name="avanti_button_reload" parent="@android:style/Widget.Button">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/regular_btn_height</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+    </style>
+
+    <style name="menu_button" parent="@android:style/Widget.Button">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="avanti_link">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">@dimen/regular_margin</item>
+        <item name="android:layout_marginRight">@dimen/regular_margin</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="avanti_pin_entry_edit_text" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_box_border</item>
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="avanti_field_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/regular_margin</item>
+        <item name="android:layout_marginRight">@dimen/regular_margin</item>
+        <item name="android:background">@drawable/bottom_border</item>
+    </style>
+
+    <style name="avanti_field_label" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">@dimen/regular_btn_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:minWidth">80dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="check_box_image_button" parent="@android:style/Widget.ImageButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@drawable/reload_checkbox</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="check_box_text" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="view_flipper_button" parent="@android:style/Widget.Button">
+        <item name="android:layout_height">@dimen/market_card_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/regular_margin</item>
+        <item name="android:layout_marginRight">@dimen/regular_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:bottomLeftRadius">10dp</item>
+        <item name="android:bottomRightRadius">10dp</item>
+        <item name="android:topLeftRadius">10dp</item>
+        <item name="android:topRightRadius">10dp</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="close_button" parent="@android:style/Widget.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/remove_back</item>
+    </style>
+
+    <style name="card_logo_button" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">133dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+        <item name="android:layout_marginBottom">100dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="card_category_text" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:layout_marginBottom">100dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="credit_card_detail" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">23dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

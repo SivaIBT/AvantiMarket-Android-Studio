@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="video_width">500</string>
+    <string name="video_height">400</string>
+
+</resources>
